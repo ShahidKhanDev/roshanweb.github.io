@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- remix icons cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Roshan - Internet Plans</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="fa fa-bars" id="menu"></div>
+
+      <div class="nav">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="images/logo.svg" width="110px" height="110px"
+          /></a>
+        </div>
+
+        <div class="navbar">
+          <div class="navbar-top">
+            <div class="socials">
+              <i class="ri ri-twitter-line"></i>
+              <i class="ri ri-instagram-line"></i>
+              <i class="ri ri-facebook-line"></i>
+              <i class="ri ri-youtube-line"></i>
+            </div>
+            <div class="search">
+              <input
+                type="text"
+                class="input-box"
+                placeholder="Search"
+                hidden
+              />
+              <span>Search</span>
+              <i class="ri ri-search-line"></i>
+            </div>
+          </div>
+          <hr />
+          <div class="navbar-bottom">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li id="personal">
+                <a href="#" class="active">Personal</a>
+                <i class="ri ri-arrow-down-s-line"></i>
+              </li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">M-Paisa</a></li>
+              <li><a href="#">Tez-Net</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Online Top-Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner" id="banner">
+      <div class="banner-content">
+        <h1>Internet Plans</h1>
+        <p>
+          Stay connected to your friends using any of your <br />
+          favorite internet plans
+        </p>
+      </div>
+    </section>
+
+    <section class="internet-plans" id="internet-plans">
+      <div class="heading">
+        <h1>Internet Plans</h1>
+        <p>Choose your perfect plan from our finest selections</p>
+      </div>
+
+      <div class="internet-plans-main">
+        <div class="internet-plans-container">
+          <select id="selectPlans" onchange="searchFilter()">
+            <option value="monthly">Monthly</option>
+            <option value="weekly">Weekly</option>
+            <option value="daily">Daily</option>
+            <option value="nightly">Nightly</option>
+            <option value="combo">Combo</option>
+            <option value="social">Social</option>
+          </select>
+          <div class="internet-plan-type active" data-filter="monthly">
+            <i class="ri ri-calendar-line"></i>
+            <p>Monthly</p>
+          </div>
+
+          <div class="internet-plan-type" data-filter="weekly">
+            <i class="ri ri-calendar-line"></i>
+            <p>Weekly</p>
+          </div>
+
+          <div class="internet-plan-type" data-filter="daily">
+            <i class="ri ri-sun-line"></i>
+            <p>Daily</p>
+          </div>
+
+          <div class="internet-plan-type" data-filter="nightly">
+            <i class="ri ri-moon-line"></i>
+            <p>Nightly</p>
+          </div>
+
+          <div class="internet-plan-type" data-filter="combo">
+            <i class="ri-briefcase-line"></i>
+            <p>Combo</p>
+          </div>
+
+          <div class="internet-plan-type" data-filter="social">
+            <i class="ri ri-facebook-line"></i>
+            <p>Social</p>
+          </div>
+
+          <div class="internet-plan-type" data-filter="regional">
+            <i class="ri ri-map-pin-line"></i>
+            <p>Regional</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Internet plan cards -->
+
+      <div class="internet-plans-col">
+        <!-- ! Monthly package cards start -->
+        <!-- card 1 -->
+        <div class="internet-plan-card monthly" data-item="monthly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">2 Gb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>250</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send M1 to 555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UM1 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="internet-plan-card monthly" data-item="monthly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">3 Gb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>350</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send M2 to 555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UM2 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="internet-plan-card monthly" data-item="monthly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">4.5 Gb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>450</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send M3 to 555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UM3 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="internet-plan-card monthly" data-item="monthly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">5 Gb</h3>
+              <p>Permanent Bundle</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>540</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send 5 to 555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send U5 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 5 -->
+        <div class="internet-plan-card monthly" data-item="monthly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">6 Gb</h3>
+              <p>+500MB FB</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>550</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send M5 to 555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UM5 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 6 -->
+        <div class="internet-plan-card monthly" data-item="monthly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">9 Gb</h3>
+              <p>+700MB FB</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>800</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send M7 to 555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UM7 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 7 -->
+        <div class="internet-plan-card monthly" data-item="monthly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">16 Gb</h3>
+              <p>SME Bundle</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>900</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send SM9 to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send DSM9 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 8 -->
+        <div class="internet-plan-card monthly" data-item="monthly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">10 Gb</h3>
+              <p>Permanent Bundle</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>900</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send 10 to 555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send U10 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 9 -->
+        <div class="internet-plan-card monthly" data-item="monthly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">12 Gb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>999</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send M10 to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UM10 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 10 -->
+        <div class="internet-plan-card monthly" data-item="monthly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">15 Gb</h3>
+              <p>Permanent Bundle</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>1200</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send A15 to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send D15 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 11 -->
+        <div class="internet-plan-card monthly" data-item="monthly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">18 Gb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>1499</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send M15 to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UM15 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 12 -->
+        <div class="internet-plan-card monthly" data-item="monthly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">20 Gb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>1599</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send 2GB to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send D20GB
+                      to 555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 13 -->
+        <div class="internet-plan-card monthly" data-item="monthly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">30 Gb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>1799</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send 30GB to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send D30GB
+                      to 555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 14 -->
+        <div class="internet-plan-card monthly" data-item="monthly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">40 Gb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>1999</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send 40GB to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send D40GB
+                      to 555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! Monthly pacakage cards end -->
+
+        <!-- ! Weekly package cards start -->
+
+        <!-- card 1 -->
+        <div class="internet-plan-card weekly" data-item="weekly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">512 Mb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Weekly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>75</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send W512 to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UW512
+                      to 555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ! Weekly package cards end -->
+
+        <!-- ! Daily package cards start -->
+        <!-- card 1 -->
+        <div class="internet-plan-card daily" data-item="daily">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">250 Mb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Daily</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>30</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send D200 to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UD200
+                      to 555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="internet-plan-card daily" data-item="daily">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">1 Gb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Daily</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>50</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send D1 to 555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UD1 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="internet-plan-card daily" data-item="daily">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">3 Gb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Daily</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>90</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send 3GB to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send U3GB to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ! Daily package cards end -->
+
+        <!-- ! Nightly package cards start -->
+        <!-- card 1 -->
+        <div class="internet-plan-card nightly" data-item="nightly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">1.5 Gb</h3>
+              <p>+100 Mins</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Nightly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>25</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send N15 to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UN15 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="internet-plan-card nightly" data-item="nightly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">3 Gb</h3>
+              <p>From 11PM to 7AM</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Nightly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>45</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send N45 to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UN45 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="internet-plan-card nightly" data-item="nightly">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">7 Gb</h3>
+              <p>11PM - 7AM for 30 Nights</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Nightly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>180</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send N7 to 555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UN7 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! Nightly package cards end -->
+
+        <!-- ! Combo package cards start -->
+        <!-- card 1 -->
+        <div class="internet-plan-card combo" data-item="combo">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">1.5 Gb</h3>
+              <p>+1000 Roshan Mins & SMS</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>450</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send D16 to
+                      555
+                    </p>
+                    <p><i class="ri ri-close-line"></i>Deactivation: -</p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="internet-plan-card combo" data-item="combo">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">3 Gb</h3>
+              <p>Nataional Mins + 1.5GB + 3000SMS</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>450</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send SP1 to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send DSP1 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="internet-plan-card combo" data-item="combo">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">7 Gb</h3>
+              <p>+1500 Roshan Mins & SMS</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>799</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send D17 to
+                      555
+                    </p>
+                    <p><i class="ri ri-close-line"></i>Deactivation: -</p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! Combo package cards end -->
+
+        <!-- ! Social package cards start -->
+        <!-- card 1 -->
+        <div class="internet-plan-card social" data-item="social">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">50 Mb</h3>
+              <p>+50 Roshan SMS</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>5</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send S5 to 555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send US5 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="internet-plan-card social" data-item="social">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">90Mb</h3>
+              <p>Facebook Bundle</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Daily</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>9</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send DFB to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UDFB to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="internet-plan-card social" data-item="social">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">250 Mb</h3>
+              <p>+50 MB Social Bundle</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Daily</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>15</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send S6 to 555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send U6 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="internet-plan-card social" data-item="social">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">250 Mb</h3>
+              <p>Facebook Bundle</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>45</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send FB50 to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send UYFB to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 5 -->
+        <div class="internet-plan-card social" data-item="social">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">400MB</h3>
+              <p>Facebook Bundle</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>65</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send FB A to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send FB D to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 6 -->
+        <div class="internet-plan-card social" data-item="social">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">500MB</h3>
+              <p>Socail Bundle</p>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>90</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send S100 to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Send U100 to
+                      555
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! Social package cars end -->
+
+        <!-- ! Regional package cards start -->
+        <!-- card 1 -->
+        <div class="internet-plan-card" data-item="regional">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">2Gb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Weekly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>5</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p><i class="ri ri-check-line"></i>Activation: Dial 242</p>
+
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Dial 242
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="internet-plan-card" data-item="regional">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">4Gb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>299</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p><i class="ri ri-check-line"></i>Activation: Dial 242</p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: Dial 242
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="internet-plan-card" data-item="regional">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">4Gb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>650</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send R10 to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: No Renewal
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="internet-plan-card" data-item="regional">
+          <div class="internet-plan-card-header">
+            <div class="internet-plan-card-content">
+              <h3 class="internet-package-name-card">20Gb</h3>
+            </div>
+          </div>
+
+          <div class="internet-package-title">
+            <div class="internet-package-title-content">
+              <div class="internet-package-type">
+                <p>Monthly</p>
+              </div>
+              <div class="internet-package-arrow">
+                <i class="ri ri-arrow-right-line"></i>
+              </div>
+            </div>
+
+            <div class="internet-package-info">
+              <div class="internet-package-price">
+                <span>؋</span>
+                <h2>999</h2>
+              </div>
+              <div class="internet-package-ins-info">
+                <div class="internet-package-ins-content">
+                  <div class="internet-package-ins-icons">
+                    <p>
+                      <i class="ri ri-check-line"></i>Activation: Send R20 to
+                      555
+                    </p>
+                    <p>
+                      <i class="ri ri-close-line"></i>Deactivation: No Renewal
+                    </p>
+                    <p><i class="ri ri-hashtag"></i> USSD: *555#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! Regional package cards end -->
+      </div>
+    </section>
+
+    <script src="js/internet-plans.js"></script>
+  </body>
+</html>
