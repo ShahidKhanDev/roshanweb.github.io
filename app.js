@@ -1,6 +1,5 @@
 var popupModalCont = document.querySelector(".modal-container");
 var modal = document.querySelector(".modal");
-// var cards = document.querySelectorAll(".package-card");
 var cardBody = document.querySelectorAll(".package-title");
 var btnClosePopupModal = document.querySelector(".close");
 var cardPackageName = document.querySelector(
@@ -21,13 +20,6 @@ cardBody.forEach((card) => {
   });
 });
 
-// !2nd method
-// function viewPlans() {
-//   for (i = 0; i < card.length; i++) {
-//     card[i].addEventListener("click", () => {});
-// console.log("card clicked");
-//   }
-// }
 
 //close the popup modal
 btnClosePopupModal.onclick = function () {
